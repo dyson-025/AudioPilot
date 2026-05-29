@@ -1,0 +1,24 @@
+# Frontend
+client/node_modules/
+client/dist/
+
+# Backend
+server/venv/
+server/uploads/
+server/.env
+server/*.db
+server/*.sqlite3
+
+# Environment Files
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
