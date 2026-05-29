@@ -1,14 +1,12 @@
 from sqlalchemy import create_engine
-
-from sqlalchemy.orm import (
-    declarative_base,
-    sessionmaker
-)
+from sqlalchemy.orm import declarative_base, sessionmaker
 
 from ..core.config import DATABASE_URL
 
 engine = create_engine(
     DATABASE_URL,
+    pool_pre_ping=True,
+    pool_recycle=300,
     connect_args={
         "check_same_thread": False
     }
@@ -26,7 +24,6 @@ Base = declarative_base()
 
 
 def get_db():
-
     db = SessionLocal()
 
     try:
