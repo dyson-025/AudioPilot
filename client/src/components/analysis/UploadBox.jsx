@@ -11,6 +11,10 @@ const UploadBox = ({ selectedFile, setSelectedFile, handleFileChange }) => {
         <>
           <h3 className="text-base font-semibold">Upload Audio</h3>
 
+          <p className="text-gray-500 mt-2 text-xs">
+            MP3, WAV supported
+          </p>
+
           <input
             type="file"
             accept=".mp3,.wav"
