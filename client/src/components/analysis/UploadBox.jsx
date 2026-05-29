@@ -13,7 +13,7 @@ const UploadBox = ({ selectedFile, setSelectedFile, handleFileChange }) => {
 
           <input
             type="file"
-            accept=".mp3,.wav,.m4a"
+            accept=".mp3,.wav"
             id="audioFile"
             className="hidden"
             onChange={handleFileChange}
